@@ -1,4 +1,12 @@
 #!/bin/bash
+# In The Name Of God
+# ========================================
+# [] File Name : p.sh
+#
+# [] Creation Date : 04-11-2015
+#
+# [] Created By : Elahe Jalalpour (el.jalalpour@gmail.com)
+# =======================================
 
 echo "Compiling..."
 gcc -std=c99 -o ${1}.out -Wall ${1}.c
