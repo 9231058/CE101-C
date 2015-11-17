@@ -36,9 +36,9 @@ func main() {
 		for j := 0; j < i; j++ {
 			fmt.Print("*")
 		}
-		for j := 0; j < sec; j++ {
-			fmt.Print(" ")
-		}
+		//for j := 0; j < sec; j++ {
+		//	fmt.Print(" ")
+		//}
 		fmt.Println()
 	}
 	for i := n - 2; i >= 1; i -= 2 {
@@ -55,9 +55,9 @@ func main() {
 		for j := 0; j < i; j++ {
 			fmt.Print("*")
 		}
-		for j := 0; j < sec; j++ {
-			fmt.Print(" ")
-		}
+		//for j := 0; j < sec; j++ {
+		//	fmt.Print(" ")
+		//}
 		fmt.Println()
 	}
 
