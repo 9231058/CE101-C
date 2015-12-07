@@ -42,12 +42,12 @@ func (h *Hanoi) Print() {
 				for j := 0; j < ring-h.L[i][l]; j++ {
 					fmt.Printf(" ")
 				}
-				fmt.Printf("    ")
+				fmt.Printf("   ")
 			} else {
 				for j := 0; j < ring; j++ {
 					fmt.Printf(" ")
 				}
-				fmt.Printf("    ")
+				fmt.Printf("   ")
 			}
 		}
 		fmt.Printf("\n")
@@ -57,7 +57,7 @@ func (h *Hanoi) Print() {
 		for j := 0; j < ring-1; j++ {
 			fmt.Printf(" ")
 		}
-		fmt.Printf("    ")
+		fmt.Printf("   ")
 	}
 	fmt.Printf("\n")
 	fmt.Printf("\n")
