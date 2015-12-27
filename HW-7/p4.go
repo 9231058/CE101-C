@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Node struct {
-	Info int
+	Info interface{}
 	Next *Node
 }
 
@@ -13,7 +13,7 @@ type List struct {
 	Size int
 }
 
-func (l *List) Append(v int) {
+func (l *List) Append(v interface{}) {
 	var nn Node
 	nn.Info = v
 	nn.Next = nil
@@ -28,9 +28,10 @@ func (l *List) Append(v int) {
 	l.Size++
 }
 
-func (l *List) DeleteValue(v int) {
+func (l *List) DeleteValue(v interface{}) {
 	if l.Head.Info == v {
 		l.Head = l.Head.Next
+		l.Size--
 		return
 	}
 
@@ -40,6 +41,7 @@ func (l *List) DeleteValue(v int) {
 	for c != nil {
 		if c.Info == v {
 			p.Next = c.Next
+			l.Size--
 			return
 		}
 		p = p.Next
@@ -49,7 +51,7 @@ func (l *List) DeleteValue(v int) {
 
 func (l *List) Print() {
 	for c := l.Head; c != nil; c = c.Next {
-		fmt.Printf("%d ", c.Info)
+		fmt.Printf("%v ", c.Info)
 	}
 	fmt.Printf("\n")
 }
