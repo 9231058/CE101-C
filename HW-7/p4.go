@@ -3,44 +3,75 @@ package main
 import "fmt"
 
 type Node struct {
-	info int
-	next *Node
+	Info int
+	Next *Node
 }
 
-func Create_Node(i int) *Node {
+type List struct {
+	Head *Node
+	Tail *Node
+	Size int
+}
+
+func (l *List) Append(v int) {
 	var nn Node
-	nn.info = i
-	nn.next = nil
-	return &nn
+	nn.Info = v
+	nn.Next = nil
+
+	if l.Size == 0 {
+		l.Tail = &nn
+		l.Head = l.Tail
+	} else {
+		l.Tail.Next = &nn
+		l.Tail = &nn
+	}
+	l.Size++
 }
 
-func Del_Node(a int, list *Node) {
-	var parent *Node = list
-	var currentlist *Node = parent.next
-
-	if parent.info == a {
-		list = currentlist
+func (l *List) DeleteValue(v int) {
+	if l.Head.Info == v {
+		l.Head = l.Head.Next
+		return
 	}
-	for currentlist.info != a {
-		parent = parent.next
-		currentlist = parent.next
-	}
-	parent.next = currentlist.next
 
+	var p *Node = l.Head
+	var c *Node = p.Next
+
+	for c != nil {
+		if c.Info == v {
+			p.Next = c.Next
+			return
+		}
+		p = p.Next
+		c = c.Next
+	}
+}
+
+func (l *List) Print() {
+	for c := l.Head; c != nil; c = c.Next {
+		fmt.Printf("%d ", c.Info)
+	}
+	fmt.Printf("\n")
 }
 
 func main() {
-	var list *Node = Create_Node(0)
-	list.next = Create_Node(10)
-	list.next.next = Create_Node(20)
-	list.next.next.next = Create_Node(30)
-	list.next.next.next.next = Create_Node(40)
-	list.next.next.next.next.next = Create_Node(50)
+	var list List
+	list.Append(10)
+	list.Append(20)
+	list.Append(30)
+	list.Append(40)
+	list.Append(50)
+	list.Print()
 
-	Del_Node(10, list)
+	list.DeleteValue(50)
+	list.Print()
 
-	for i := list; i.next != nil; i = i.next {
-		fmt.Println(i.info)
-	}
+	list.DeleteValue(10)
+	list.Print()
 
+	list.DeleteValue(40)
+	list.Print()
+
+	list.DeleteValue(30)
+	list.Print()
 }
