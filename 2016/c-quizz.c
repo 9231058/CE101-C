@@ -13,6 +13,10 @@
  */
 #include <stdio.h>
 
+/*
+ * This program solves N queen problem for you ... !?!
+ */
+
 int v, i, j, k, l, s, a[99];
 
 int main(){
