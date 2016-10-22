@@ -14,6 +14,14 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
 - Flow Chart
 - Debugging
     * Tracing by Hand
+### Session 2
+- Algorithms
+    * Binary Search
+- HW-1
+    * Problem 8
+    * Problem 3
+    * Problem 4
+    * Problem 5
 
 ## Teaching Assistants over Semesters
 ### Fall-2015
