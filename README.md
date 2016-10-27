@@ -14,6 +14,7 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
 - Flow Chart
 - Debugging
     * Tracing by Hand
+
 ### Session 2
 - Algorithms
     * Binary Search
