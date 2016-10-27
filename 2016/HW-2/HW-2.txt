@@ -1,24 +1,37 @@
-| نیم سال اول ۹۵-۹۶    | مبانی برنامه نویسی | موعد تحویل: ۱ آبان ۱۳۹۵  |
-|:---------------------|:------------------:|:------------------------:|
+| نیم سال اول ۹۵-۹۶    | مبانی برنامه نویسی | موعد تحویل: ۱۴ آبان ۱۳۹۵ ساعت ۲۲:۰۰  |
+|:---------------------|:------------------:|:-----------------------------------:|
 
 # تمرین سری دوم مبانی برنامه نویسی 
 لطفا به موارد زیر توجه نمایید:
 
 1. برای هر تمرينی كه در آن از شما برنامه‌ای خواسته شده است فرمت ورودی و خروجی دقيقا مشخص شده است. برنامه شما بايد دقيقا با همين فرمت كار كند تا نمره كامل بگيرد.
-2. پاسخ سوالات ۱ و ۲ به صورت تايپ شده و كد‌های مسائل ۳ الی ۷ را در سايت Quera (كه در كلاس تدريسيار شرح داده شده است) بارگذاری نماييد.
+2. پاسخ سوالات ۱ و ۲ به صورت تايپ شده و كد‌های مسائل ۳ الی ۶ را در سايت Quera (كه در كلاس تدريسيار شرح داده شده است) بارگذاری نماييد.
 
 ## سوال اول
-پرانتز‌های غیر ضروری را حذف کنید.
+مقدار و نوع خروجی عبارت‌های زیر را مشخص کنید:
 
-$$(1) (((a) / (b)) / ((c * d) + f))$$
+	float a = 10, b = 20;
+	int c = 30, d = 40, e = 2, f = 5;
 
-$$(2) ((a * ((++b) * (f++))) - ((int)c \% (int)d))$$
+الف)
 
-$$(3) ((a - ((sizeof(b) \% c++)) / ((sizeof (d)) * (e * f)))$$
+	(((a) * (b)) / ((c + d)))
 
-$$(4) (((a * b) \% (int)((c / d))) - (e + (f / g)))$$
+ب)
 
-$$(5)  e /= a *= (b += (c += d))$$
+	((a * b) - (c % d))
+
+ج)
+
+	((a – (d % c)) / ((d) * (e + f)))
+
+د)
+
+	(a * b) - (c / d) - (e / (f / g))
+
+هـ)
+
+	((((a + b) + c) * d) + ((e + f) – g)) * a
 
 ## سوال دوم
 نحوه توليد خروجی هر قطعه كد را مرحله به مرحله شرح دهيد و مواردی كه cast رخ می‌دهد را مشخص كنيد.
@@ -26,47 +39,57 @@ $$(5)  e /= a *= (b += (c += d))$$
 قسمت الف)
 
 	int i, j;
-	float f = 1;
-	double d = 1.23;
-	char c;
-	j = 1;
-	f = i = j;
-	c = i;
-	i = (int) d;
-	c = d + i * 70;
-	printf("%d, %d, %f, %f, %c", i, j, f, d, c);
+	double d;
+	float f;
+	d = f = j = i = 1;
+	d = j + i + 1.0;
+	i = i % (int)(f + j);
+	printf("%lf, %d\n", d, i);
 
 قسمت ب)
 
-	double a;
-	float b;
-	int c;
-	a = 15;
-	b = 5;
-	c = b += a;
-	a = (c--) + (b++);
-	a += b * (sizeof((int)(b++)) % 3);
-	c = c * a;
-	printf("%f, %f, %d\n", a, b, c);
+	int i, j;
+	double d;
+	d = 1.0;
+	j = i = 1;
+	d = (i++) + (--j);
+	i += j++ + 1;
+	printf("%lf, %d, %d\n", d, i, j);
+
+قسمت ج)
+
+	int i = 0, j = 1;
+	bool p, q;
+	p = i;
+	q = p ? p : !p;
+	i = p && q;
+	j = q || q;
+	printf("%d, %d\n", i, j);
 
 ##سوال سوم
-برنامه‌ای بنویسید که با دریافت عدد n ‌از کاربرد حاصل عبارت‌های زیر را محاسبه نماید:
-$$\sum_n^1{1/i}$$
-$$\sum_1^n{1/i}$$
-## سوال چهارم
-برنامه‌ای بنويسيد كه اندازه ضلع مربع در شكل زير را از كاربر بگيرد و مساحت و محيط ناحيه اشتراک دو دايره را چاپ كند.
+برنامه‌ای بنویسید که مقدار پارامترهای موجود در روابط زیر را از کاربر بگیرد $ (a,b, ...) $ و مقدار عبارت را محاسبه و چاپ کند.
 
-![](data:image/gif;base64,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)
+(a) ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAvBAAAAACpbJ4CAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QADzoyPqMAAAAJcEhZcwAAAGQAAABkAA+Wxd0AAAAHdElNRQfgChoTISgIzr5IAAAB4ElEQVQ4y83UPU/CQBgH8IsaClYDxkQXIyxKXNQYJ0Kigw666ODmoHwCkMXBmOLkCBo3B9TEOIKDYqyx8RNIHF2Kiw4OCAINL+3j3Rle2oNwg4PP0NzLL9feNfdH0L0MWUUcLIYUDlYTADiY5myyd5d/hRV6oEfSERLrzJg7DTtY9rSaEozrzcc6K43D9wC7xRGAAGSijZfiZsHNsFK/LG9DUmmwmAqFNYblEUI9EIIGw82MxLAvOrTRwlTYTjAsFyTP0SZL+y5d++yJ2eSruO5osrLHm5xmDySMJp4rA8DzFzQ3F3uReNgT2QHPr+/MDIWLVZ3/gn0hc+FT+pTvRPmBTNbL2W61JJnp+wdb4GZLps9XyLO2xjKhtR/Jtl0eQa2/tR+GDqxsusbLnZgmrtuyOC3QFny4/IJlvjI7tUtZYeg0JMH5yn0QB8mOaGGxvaNJynJjUHTrOC1AG4fCoFnpdtDslKUlnGA4avBljf5eo5YqzUBVpOxMwZ18EGiQFC0HhsdJCmIWIiFA0wK33iQzw+PFBcoWE7Cj0rSIsEGCx5MSZcO+WwdognyIg+TGo1q+TUh54oQZqwe9CZIWPqh4vCeW8zDWbTEVOK6zMQ/d2at8PMbBLtCkysHq9bfsB/cEShj58wOYAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI2VDE5OjMzOjQwLTA1OjAw58DsYwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNlQxOTozMzo0MC0wNTowMJadVN8AAAAhdEVYdHBzOkhpUmVzQm91bmRpbmdCb3gANTV4MzQrMjY4KzYwOJ49bH4AAAA3dEVYdHBzOkxldmVsAEFkb2JlRm9udC0xLjA6IEFyZXZTYW5zLU9ibGlxdWUgUmVsZWFzZSAwLjIxYQpiqkxdAAAAKHRFWHRwczpTcG90Q29sb3ItMABNYXRoRGVzaWduLUNILUJvbGQtT1QxLTEwbTR3QQAAAABJRU5ErkJggg==)
+
+(b) ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAASBAAAAAAFMdbVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QADzoyPqMAAAAJcEhZcwAAAGQAAABkAA+Wxd0AAAAHdElNRQfgChoTJTB/zuMaAAAC90lEQVQ4y7WUTUwTURDHFygfSy0QJXDSEEkw8cDXwYQYLSbEk6ZESYypCQViPLac8ONQjEcS2yieOKyJNwyhB0Rjo8tBvHhog4nXlhiMiYctFSht6Y7/ebvt7mblyCTbfX0z/997M/PeSnSyJhFNmMPfUfK6/K+MV+G5Wzpm6YRV5JrrLh4vPdQE/4Lp7tOYP+dg7F0x3vpUxsXvtnRUAqd8qub67mf+r7OC32KiAjxXVZk2q5HlhZU1y/fJ5tnuQY7tNZfeLVhjzC+bRUkoPGdLkuO6qqOiEZVTXWmwju6MEu37rckpUYu4Cv5hOy1uSlEKacyPSFJKn/J8SRVvjDdTsRWxb+oeBUhvsvN/dDQoxTZLV+oHP/+g5yIVOyQJk68V5mfD4BcG6NbIukzXRE++epP0c+RdT2a/dymkFFDSYtPH4QGiThu/0vn2Q8qu214FP9e5PJhJP7u85s3QhjgruwHwUb/zGjWTR/A5yWlNr6N8P+WieyhpGruZJBq18QttRt1rugl2J/yUjv3Jh7khuQDzIZdA0VtIl01+Pipa4KFsjLIK82ehjBn8b8nEQvIzUmrEMruWruRj97wKFnT4sfPTCg4WmmzwswoVfYRtJVKUUJnfB75q8EdRW4kbvSjds+t2g8nBJIWQq4LYDcXBT6RwsNBkgw8s/pZaKYINcQCW4rGjPtjxEEA1XY7X5dMYzyCWd2PjR2g/QAd+GhZ8oAo++uvjWz3DQ2qiozNw9TrP56xDJ5aXNB253ha7SYv+5v3MX0HN98I0LvjzC6lKw/KQzLf6Oh0iKPTk6WlQG2389aX3zQ4d84/qgy+vcjkjK6JjkOYmwd9qRc3Rk/gq83ekSXpR/7gRjUNlKijOjhQcj1FJtvHXOjyrDh3zyzdDXRqh51u4NJEM83ELpNqVy4fJ/X2brg4OBoyPQcp1f1nnsj7BmiYbvyz/h79dFcdVOsbKsnvu4Byz+Jti8Wkz7ObrM6YgSMfapjuBSxnm31cd/BOxf1g2d1fvi7F9AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI2VDE5OjM3OjQ4LTA1OjAw3cQCfgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNlQxOTozNzo0OC0wNTowMKyZusIAAAAidEVYdHBzOkhpUmVzQm91bmRpbmdCb3gAMTM3eDEzKzIyNys2MjUDVcu0AAAAN3RFWHRwczpMZXZlbABBZG9iZUZvbnQtMS4wOiBBcmV2U2Fucy1PYmxpcXVlIFJlbGVhc2UgMC4yMWEKYqpMXQAAAEV0RVh0cHM6U3BvdENvbG9yLTAATWF0aERlc2lnbi1DSC1Cb2xkLU9UMS0xMCBNYXRoRGVzaWduLUNILUJvbGQtU3ltYm9sLTEwVE3OQgAAAABJRU5ErkJggg==)
+
+(c) ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAA6BAAAAAALfFanAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QADzoyPqMAAAAJcEhZcwAAAGQAAABkAA+Wxd0AAAAHdElNRQfgChoTJw0VkM2JAAACVElEQVQ4y73UP2gTURgA8DNpTE28JrgopbRZgnSK/xCsDiekIFq4Iu4xIq4xKohLLoObQ+qfzaGgmw4GoXW44YXi5pDUTRzSUmjHK8k1V9O7+3x39+Tee5fLOYgfhO9d3o/3vveHJ4AbpnRGhtGxL3h5u/a9EEHug1GKIPMwULiuJmJJGrYRR+oaS/LWcpsjj7iJNuIvKxxZ9EldEBKBGvey15JglxNf2w75qa6neGFfeFtNw86VtVzXm6i8yhNjFnQR7mn2Ma+WwQxOgpDEXd9UHHglnQYYc9YJgKJHyv5aJEwFvPqVLhzIv0SApEt2Z4I7+hAfiWJkwEw5xL7YDpJ6F+5+OhRBn3JIf9qdnY3OAl6LFf9wveCQJp4dj7Mm0Fs3zJ19A/Aq9r7i7+7RpI2C88EK8klPCfYP1fXj1Bm1tCA5ECZWKdKE0PhDthQzigxzySgyJv4ViYjM/6wltMtwLsB48lobO8pudsk4dWscsS9rj+Hq2FoMGfZBZMlRmiG9YnHRzLDkcIpdJ/4NZZYYBXcssgbo12xkKCzRS+4HIv+aUqyhNyhiV+MthSFuPYgiO/Nfsogn1iZ9AFUNpC5PeksUsSaxwk1Vbb5QEXuFkh5x3og7uEluUCAwwW+EfRoC5dIEvxGDFE1saY4jVvzjbZEmgwo/CryLPZNpsnxJIxu4UOFPWm+7aYt8bjZaJRh9GT6T/AB0JYQ8915OmIY+CiFPSU5DpxtCbpKct85DCDlJ8sbEkxBi+YdwI4T8KJFGbW92NDHzGmmdS7TDauHib8hvI6zX/YWNqiIAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjZUMTk6Mzk6MTMtMDU6MDCJ6mhTAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI2VDE5OjM5OjEzLTA1OjAw+LfQ7wAAACF0RVh0cHM6SGlSZXNCb3VuZGluZ0JveAA0OHg0MisyNzIrNjAww/WV0AAAADd0RVh0cHM6TGV2ZWwAQWRvYmVGb250LTEuMDogQXJldlNhbnMtT2JsaXF1ZSBSZWxlYXNlIDAuMjFhCmKqTF0AAAA3dEVYdHBzOlNwb3RDb2xvci0wAEFyZXZTYW5zLVJvbWFuIE1hdGhEZXNpZ24tQ0gtQm9sZC1PVDEtMTDvLK6NAAAAAElFTkSuQmCC)
+
+(d) ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAAAuBAAAAABV0kDWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QADzoyPqMAAAAJcEhZcwAAAGQAAABkAA+Wxd0AAAAHdElNRQfgChoTKQ4SGrG9AAADBUlEQVRIx7WWz2sTQRTHp78SklqTXipqm3hqL2KwBw8imqIeBCGheBQbBMGD2LQE1JayKerJQ1KvPUQiniomN5Gl5OTJQwL+AQkptt42bbfZptvd58xkW9jsvg2s6TvMW/bN9zNv3s68hMCZGDlzrBYfKFH3ljyxTmtdGSpTt0Ae2zD0IHdRBPtNCVH3VX9kVWqSEqGurC/aYA8SbDxCsNSG+Vg0q562XYCPDQv0AuRrzNcrGFY9z13KrLvPx0OB7/eNZR9+bZyv9aqBYetcejRuFnr5DvpZbRXysBOrjsgZBtRCGFa/wd3Hskl37OduJ8KnWGqrBN7xysg5G+x28NYD2Jpnj62OZFv+uEfCavu5730sSgiNNQgZ7MTq0+uLPp7sCqyZkwWlfzk5r0o7MU2Agm6ue8vzY1Rga7VK5hXb2GYI9s+phHiPR4AubpLKfmiGleCYdBiBaN9LU6ySgXSOAXdzdthaBuQw2NtujNYPidGzVyzZBdrYbBXkGCKtCNCMILFJgLRtoI1N0oQFRErT2ZtHYvTs3XXCViFRQKRJAdJVJDYGRx4HbOXml+AKIp29+N2HhCCxnPJ2vuNdiRiPU8VriPR5fgDbCPwhLyzXjnelM+m3AYb9K/QO+FoC3pUIaJNS77DbE+2uRPADq7pZ7h7wrkSgmENmNEousFkmYrVNYEm5wtZ4V6LYGWyGK+xujHUlih3EZrjCygHuUKwoFj+ICPiXSE3qjiUdJhivArzrm4xd1ih7KNnGumX7v0WY7il2746BjfcU25gzsNlCL7GfcgYWbf1y2QXW+GdFQPW5UGPWGj7Bwk8jXT1FxtAEZ8kUDjs4PU3PSqfYE1OnNtbGEaG+JMYFFJu3HFLzr4PqQaWwF8Yi2uUuWPxuAOyjWFnolq0XUEujRViVumDrIUyqkCG0BpfAGatfL6NacfU2VoO5Ltgt7CDwAmGfM7suDmw6YB2SZYZ9zqTRLjHs76tOVKfD51QEbXRD3ER0h0viwoQ7rGqzmdPYDJmsusP20v4BsA5NOSw9smgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjZUMTk6NDE6MTQtMDU6MDB2oQOqAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI2VDE5OjQxOjE0LTA1OjAwB/y7FgAAACJ0RVh0cHM6SGlSZXNCb3VuZGluZ0JveAAxMjR4MzMrMjMzKzYwOaj0SzAAAAA3dEVYdHBzOkxldmVsAEFkb2JlRm9udC0xLjA6IE1hdGhEZXNpZ24tQ0gtQm9sZC1PVDEtMTAgMS41MQpn03oWAAAAPHRFWHRwczpTcG90Q29sb3ItMABBcmV2U2Fucy1PYmxpcXVlIE1hdGhEZXNpZ24tQ0gtQm9sZC1TeW1ib2wtMTAW84h9AAAAAElFTkSuQmCC)
+
+## سوال چهارم
+برنامه‌ای بنويسيد كه طول دو قطر يك لوزی را بگيرد و مساحت، محيط و اندازه زاويه‌های آنرا چاپ كند.
 
 ورودی:
 
-	<a>
+	<a> <b>
 
 خروجی:
 
 	S: <xyz>
 	P: <xyz>
-
+	A1: <xyz>
+	A2: <xyz>
 
 ## سوال پنجم
  برنامه‌اي بنويسيد كه دو تاريخ (شامل سال، ماه و روز) را از كاربر بگيرد و اختلاف بين آنها را بر حسب روز و ماه و سال چاپ كند. فرض كنيد همه ماه‌های سال ۳۰ روز است (پس يك سال ۳۶۰ روز است).
@@ -82,8 +105,8 @@ $$\sum_1^n{1/i}$$
 	0 7 25
 
 ## سوال ششم
-برنامه‌ای بنويسيد كه دو عدد اعشاری n و m را بگیرد:$$ 0 <= n <= 2 * RAND\_MAX $$
-$$ -RAND\_MAX <= m <= 0 $$
+برنامه‌ای بنويسيد كه دو عدد اعشاری n و m را بگیرد:$$ 0 <= n <= RAND\_MAX $$
+$$ -3 * RAND\_MAX <= m <= 0 $$
 
 و چهار عدد تصادفی در بازه [m ,n] تولید و آن‌ها را چاپ نماید. برنامه در هر بار اجرا شدن به ازای n و mهای یکسان باید خروجی‌های متفاوتی داشته باشد.
 
@@ -96,16 +119,3 @@ $$ -RAND\_MAX <= m <= 0 $$
 
 	1 3 2 4
 	5 8 9 10
-
-##سوال هفتم
-فرض کنید یک تاس چند وجهی داریم که بر روی هر وجه آن یک عدد نوشته شده است و این اعداد می‌توانند تکراری باشند، برنامه‌ای بنویسید که این تاس را مدل کند. برنامه شما در ابتدا تعداد وجه‌های تاس را می‌خواند و در ادامه عداد روی وجه‌ها به ترتیب می‌آیند. برنامه شما می‌بایست در خروجی یک عدد چاپ کند که نماینده عددی است که در یکبار پرتاب این تاس بدست آمده است. برنامه شما می‌بایست با اجراهای مختلف با ورودی‌های یکسان خروجی‌های متفاوت تولید کند.
-
-ورودی:
-
-	4 1 1 2 2
-	3 1 1 1
-
-خروجی:
-
-	2
-	1
