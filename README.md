@@ -24,6 +24,21 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
     * Problem 4
     * Problem 5
 
+### Session 3
+- Pseudo
+- Algorithms
+    * GCD
+    * Prime/Not Prime
+    * Random [a, b]
+
+### Session 4
+- HW-2
+    * Problem 2 [b c]
+    * Problem 5
+       * IF baesd
+       * Sum of Days
+    * Problem 6
+
 ## Teaching Assistants over Semesters
 ### Fall-2015
 * [Elahe Jalalpour](https://github.com/elahejalalpour)
