@@ -26,7 +26,8 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
 
 ### Session 3
 - Pseudo
-- Algorithms
+- CodeBlocks Installation
+- CodeBlocks Examples
     * GCD
     * Prime/Not Prime
     * Random [a, b]
