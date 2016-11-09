@@ -1,2 +1,0 @@
-This is square
-100.00

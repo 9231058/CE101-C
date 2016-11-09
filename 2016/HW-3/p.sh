@@ -20,5 +20,5 @@ for i in "${1}/in/"*.txt; do
 	let counter=counter+1
 done
 
-zip -r ${1} "${1}/"*
+cd ${1}; zip -r ../${1} *; cd ..
 echo "Zip file created for quera..."

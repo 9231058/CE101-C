@@ -1,2 +1,0 @@
-This is rectangle
-200.00
