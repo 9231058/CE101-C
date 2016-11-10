@@ -9,7 +9,7 @@
 # =======================================
 
 echo "Compiling..."
-gcc -std=c99 -o ${1}.out -Wall ${1}.c
+gcc -o ${1}.out -Wall ${1}.c -lm
 echo "Compilation was successful"
 
 counter=1
