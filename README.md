@@ -40,6 +40,11 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
        * Sum of Days
     * Problem 6
 
+### Session 5
+- Integer Factorization
+- Min - Max - Average in array of numbers
+- Square Root
+
 ## Teaching Assistants over Semesters
 ### Fall-2015
 * [Elahe Jalalpour](https://github.com/elahejalalpour)
