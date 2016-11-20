@@ -45,6 +45,12 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
 - Min - Max - Average in array of numbers
 - Square Root
 
+### Session 6
+- HW-3
+    * Problem 6
+    * Problem 5
+    * Problem 4
+
 ## Teaching Assistants over Semesters
 ### Fall-2015
 * [Elahe Jalalpour](https://github.com/elahejalalpour)
