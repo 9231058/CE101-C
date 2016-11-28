@@ -1,7 +1,7 @@
 #!/bin/bash
 # In The Name Of God
 # ========================================
-# [] File Name : p.sh
+# [] File Name : p-go.sh
 #
 # [] Creation Date : 04-11-2015
 #
