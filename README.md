@@ -4,6 +4,10 @@ Feel free to visit and use some sample codes and homeworks problem source codes 
 Introduction to Programming course at the Amirkabir University of Tech.
 under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
 
+For homework problems and more materials about the course see [here](http://ceit.aut.ac.ir/~bakhshis/c).
+
+**Thanks to [Quera](https://quera.ir/) for supporting our course !**
+
 ## Teaching Assistants Classes Topic
 ### Session 1
 - Algorithms
@@ -50,6 +54,15 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
     * Problem 6
     * Problem 5
     * Problem 4
+
+### Session 7
+- Lazy Operations in OR-AND
+- HW-4
+   * Problem 1
+   * Problem 3
+   * Problem 4
+   * Problem 5
+   * Problem 6
 
 ## Teaching Assistants over Semesters
 ### Fall-2015
