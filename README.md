@@ -72,8 +72,8 @@ For homework problems and more materials about the course see [here](http://ceit
 * [Parham Alvani](https://github.com/1995parham)
 
 ### Fall-2016
-* Mahtab Farrokh
-* Ramtin Shakeri
-* Esmail Naderi
-* Amirmohammad Haghollahi
+* [Mahtab Farrokh](https://github.com/mahtabfarrokh)
+* [Ramtin Shakeri](https://github.com/RamtinSh7596)
+* [Esmail Naderi]()
+* [Amirmohammad Haghollahi](https://github.com/AMIRmh)
 * [Parham Alvani](https://github.com/1995parham)
