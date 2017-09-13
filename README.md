@@ -6,7 +6,7 @@ under supervision of [Prof. Bakhshi](http://ceit.aut.ac.ir/~bakhshis/).
 
 For homework problems and more materials about the course see [here](http://ceit.aut.ac.ir/~bakhshis/c).
 
-**Thanks to [Quera](https://quera.ir/) for supporting our course !**
+**Thanks to [Quera](https://quera.ir/) for supporting our course!**
 
 ## Teaching Assistants Classes Topic
 ### Session 1
@@ -29,7 +29,6 @@ For homework problems and more materials about the course see [here](http://ceit
     * Problem 5
 
 ### Session 3
-- Pseudo
 - CodeBlocks Installation
 - CodeBlocks Examples
     * GCD
