@@ -65,9 +65,9 @@ For homework problems and more materials about the course see [here](http://ceit
 
 ## Teaching Assistants over Semesters
 ### Fall-2014
-* [Shirin Shirazi]()
-* [Bita Azari]()
-* [Ahmad Asadi]()
+* [Shirin Shirazi](https://ir.linkedin.com/in/shirin-ha-shirazi)
+* [Bita Azari](http://ceit.aut.ac.ir/~azari/)
+* [Ahmad Asadi](https://github.com/ahmad-asadi)
 * [Parham Alvani](https://github.com/1995parham)
 
 ### Fall-2015
