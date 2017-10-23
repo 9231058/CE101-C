@@ -64,6 +64,12 @@ For homework problems and more materials about the course see [here](http://ceit
    * Problem 6
 
 ## Teaching Assistants over Semesters
+### Fall-2014
+* [Shirin Shirazi]()
+* [Bita Azari]()
+* [Ahmad Asadi]()
+* [Parham Alvani](https://github.com/1995parham)
+
 ### Fall-2015
 * [Elahe Jalalpour](https://github.com/elahejalalpour)
 * [Shiva Zamani](https://github.com/shiva-z)
