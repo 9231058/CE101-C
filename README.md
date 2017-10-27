@@ -82,3 +82,10 @@ For homework problems and more materials about the course see [here](http://ceit
 * [Esmail Naderi]()
 * [Amirmohammad Haghollahi](https://github.com/AMIRmh)
 * [Parham Alvani](https://github.com/1995parham)
+
+### Fall-2017
+* [Paya Faghani](https://github.com/pfaghani)
+* [Ehsan Souri](https://github.com/ehsansouri23)
+* [Parsa Eskandarnejad](https://github.com/parsaaes)
+* [Soroush Barmakie](https://github.com/sbarmak1377)
+* [Parham Alvani](https://github.com/1995parham)
