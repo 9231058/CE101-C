@@ -8,7 +8,7 @@ For homework problems and more materials about the course see [here](http://ceit
 
 **Thanks to [Quera](https://quera.ir/) for supporting our course!**
 
-## Teaching Assistants Classes Topic
+## Teaching Assistants Classes Topics
 ### Session 1
 - Algorithms
     * Finding a Minimum
