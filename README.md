@@ -8,7 +8,7 @@ For homework problems and more materials about the course see [here](http://ceit
 
 **Thanks to [Quera](https://quera.ir/) for supporting our course!**
 
-## Teaching Assistants Classes Topic
+## Teaching Assistants Classes Topics
 ### Session 1
 - Algorithms
     * Finding a Minimum
@@ -23,10 +23,6 @@ For homework problems and more materials about the course see [here](http://ceit
 - Algorithms
     * Binary Search
 - HW-1
-    * Problem 8
-    * Problem 3
-    * Problem 4
-    * Problem 5
 
 ### Session 3
 - CodeBlocks Installation
@@ -34,6 +30,8 @@ For homework problems and more materials about the course see [here](http://ceit
     * GCD
     * Prime/Not Prime
     * Random [a, b]
+- Debugging
+    * CodeBlocks Debugger
 
 ### Session 4
 - HW-2
