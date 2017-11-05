@@ -53,6 +53,8 @@
 
 ج) آيا این چهار ضلعی مربع است يا خیر؟ 
 
+د) آيا این چهار ضلعی مستطیل است يا خیر؟
+
 اين برنامه را طوری بنويسيد كه ارتفاع درخت تصميم آن حداقل باشد.
 
 تذکر:
@@ -87,12 +89,14 @@
     Square: <true/false>
     Rectangle: <true/false>
     Parallelogram: <true/false>
+    Diamond: <true/false>
 
 خروجی ۱:
 
-    Square: True
-    Rectangle: True
-    Parallelogram: True
+    Square: true
+    Rectangle: true
+    Parallelogram: true
+    Diamond: true
 
 
 ## سوال چهارم
