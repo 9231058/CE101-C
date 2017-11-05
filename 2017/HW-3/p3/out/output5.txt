@@ -1,0 +1,4 @@
+Square: false
+Rectangle: false
+Parallelogram: true
+Diamond: false
