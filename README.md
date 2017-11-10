@@ -40,6 +40,7 @@ For homework problems and more materials about the course see [here](http://ceit
        * IF baesd
        * Sum of Days
     * Problem 6
+       * Pseudo Random Number Generation
 
 ### Session 5
 - Integer Factorization
