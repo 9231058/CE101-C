@@ -1,0 +1,3 @@
+Even number: 4
+Prime 1: 2
+Prime 2: 2

@@ -1,0 +1,12 @@
+Even number: 4
+Prime 1: 2
+Prime 2: 2
+Even number: 6
+Prime 1: 3
+Prime 2: 3
+Even number: 8
+Prime 1: 3
+Prime 2: 5
+Even number: 10
+Prime 1: 3
+Prime 2: 7
