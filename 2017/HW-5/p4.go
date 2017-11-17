@@ -25,6 +25,7 @@ func nextPrime(n int) int {
 	if n == 2 {
 		return 3
 	}
+	n += 2
 	for !isPrime(n) {
 		n += 2
 	}
