@@ -8,6 +8,9 @@ For homework problems and more materials about the course see [here](http://ceit
 
 **Thanks to [Quera](https://quera.ir/) for supporting our course!**
 
+## Trello boards
+- [Fall-2017](https://trello.com/b/2HlMa6yF)
+
 ## Teaching Assistants Classes Topics
 ### Session 1
 - Algorithms
@@ -15,6 +18,7 @@ For homework problems and more materials about the course see [here](http://ceit
     * GCD
     * Fibonacci
     * Hanoi Tower
+    * Binary search
 - Flow Chart
 - Debugging
     * Tracing by Hand
@@ -35,32 +39,26 @@ For homework problems and more materials about the course see [here](http://ceit
 
 ### Session 4
 - HW-2
-    * Problem 2 [b c]
-    * Problem 5
-       * IF baesd
-       * Sum of Days
-    * Problem 6
-       * Pseudo Random Number Generation
+- Pseudo Random Number Generation
 
 ### Session 5
 - Integer Factorization
-- Min - Max - Average in array of numbers
+- [Min - Max - Average] in array of numbers
 - Square Root
 
 ### Session 6
 - HW-3
-    * Problem 6
-    * Problem 5
-    * Problem 4
 
 ### Session 7
 - Lazy Operations in OR-AND
 - HW-4
-   * Problem 1
-   * Problem 3
-   * Problem 4
-   * Problem 5
-   * Problem 6
+
+### Session 8
+- Midterm sample
+- Static variables in functions
+
+### Session 9
+- HW-5
 
 ## Teaching Assistants over Semesters
 ### Fall-2014
