@@ -43,6 +43,7 @@ func main() {
 		}
 		fmt.Println()
 	}
+	fmt.Println()
 
 	B := make([][]int, m)
 	for i := 0; i < m; i++ {
@@ -58,6 +59,7 @@ func main() {
 		}
 		fmt.Println()
 	}
+	fmt.Println()
 
 	C := make([][]int, n)
 	for i := 0; i < n; i++ {
@@ -75,6 +77,7 @@ func main() {
 		}
 		fmt.Println()
 	}
+	fmt.Println()
 
 	D := make([][]int, m)
 	for i := 0; i < m; i++ {
@@ -92,5 +95,6 @@ func main() {
 		}
 		fmt.Println()
 	}
+	fmt.Println()
 
 }
