@@ -38,7 +38,7 @@ func main() {
 	fmt.Scanf("%d", &o)
 
 	sort.Slice(q, func(i, j int) bool {
-		if q[i].Numerator*q[j].Denominator < q[j].Numerator*q[j].Denominator {
+		if q[i].Numerator*q[j].Denominator < q[j].Numerator*q[i].Denominator {
 			if o == 1 {
 				return true
 			}
