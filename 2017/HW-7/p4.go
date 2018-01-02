@@ -34,6 +34,7 @@ func insertBefore(l *list.List, x, y interface{}, equal func(i, j interface{}) b
 
 func main() {
 	l := list.New()
+	l.PushBack(10)
 
 	s := []struct{ x, y int }{
 		{20, 100},
