@@ -1,0 +1,5 @@
+Perimeter: 40
+Area: 100
+Diameter: 14.14
+Inside Circle: 78.50
+Outside Circle: 44.41

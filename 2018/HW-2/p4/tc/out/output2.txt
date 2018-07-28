@@ -1,0 +1,5 @@
+Perimeter: 8
+Area: 4
+Diameter: 2.83
+Inside Circle: 3.14
+Outside Circle: 8.88
