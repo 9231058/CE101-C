@@ -11,6 +11,10 @@ For homework problems and more materials about the course see [here](http://ceit
 ## Trello boards
 - [Fall-2017](https://trello.com/b/2HlMa6yF)
 
+## Requirements
+Source codes of Homework is written in Go and C.
+Documentations are in Word and needs Sahel and Vazir fonts.
+
 ## Teaching Assistants Classes Topics
 ### Session 1
 - Algorithms
@@ -85,4 +89,15 @@ For homework problems and more materials about the course see [here](http://ceit
 * [Ehsan Souri](https://github.com/ehsansouri23)
 * [Parsa Eskandarnejad](https://github.com/parsaaes)
 * [Soroush Barmakie](https://github.com/sbarmak1377)
+* [Parham Alvani](https://github.com/1995parham)
+
+### Fall-2018
+
+* [Parsa Eskandarnejad](https://github.com/parsaaes)
+
+* [AliAkbar Badri](https://github.com/aabadri)
+* [Amirhossein Bavand](https://github.com/ahbavand)
+* [Saeid Dadkhah](https://github.com/SaeidDadkhah)
+* [Mahdi Aghajani](https://github.com/mmaghajani)
+
 * [Parham Alvani](https://github.com/1995parham)
