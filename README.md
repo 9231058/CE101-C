@@ -12,8 +12,8 @@ For homework problems and more materials about the course see [here](http://ceit
 - [Fall-2017](https://trello.com/b/2HlMa6yF)
 
 ## Requirements
-Source codes of Homework is written in Go and C.
-Documentations are in Word and needs Sahel and Vazir fonts.
+Source codes of Homework are written in Go and C.
+Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahel-font) and [Vazir](https://github.com/rastikerdar/vazir-font) fonts.
 
 ## Teaching Assistants Classes Topics
 ### Session 1
