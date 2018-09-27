@@ -92,12 +92,9 @@ Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahe
 * [Parham Alvani](https://github.com/1995parham)
 
 ### Fall-2018
-
 * [Parsa Eskandarnejad](https://github.com/parsaaes)
-
 * [AliAkbar Badri](https://github.com/aabadri)
 * [Amirhossein Bavand](https://github.com/ahbavand)
 * [Saeid Dadkhah](https://github.com/SaeidDadkhah)
 * [Mahdi Aghajani](https://github.com/mmaghajani)
-
 * [Parham Alvani](https://github.com/1995parham)
