@@ -10,6 +10,7 @@ For homework problems and more materials about the course see [here](http://ceit
 
 ## Trello boards
 - [Fall-2017](https://trello.com/b/2HlMa6yF)
+- [Fall-2018](https://trello.com/b/HGB2XpUD)
 
 ## Requirements
 Source codes of Homework are written in Go and C.
