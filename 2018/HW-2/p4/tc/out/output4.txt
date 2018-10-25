@@ -1,5 +1,1 @@
-Perimeter: 72
-Area: 324
-Diameter: 25.46
-Inside Circle: 254.34
-Outside Circle: 79.93
+Cost = 2000
