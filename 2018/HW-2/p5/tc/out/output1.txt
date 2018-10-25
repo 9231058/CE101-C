@@ -1,0 +1,2 @@
+Perimeter: 20.00
+Area: 20.78
