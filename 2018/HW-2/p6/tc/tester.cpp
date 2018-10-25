@@ -7,10 +7,10 @@
 
 using namespace std;
 
-// validate checks existence of r in [n, m] and r parity (r must be even).
+// validate checks existence of r in [m, n] and r parity (r must be even).
 // if r is valid this function returns 0 otherwise 1.
 int validate(int n, int m, int r) {
-    if (r < n || r > m) {
+    if (r > n || r < m) {
         return 1;
     }
     return r % 2;
