@@ -12,17 +12,26 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	var x int
+	var weight int
+	var cost int
 
-	fmt.Scanf("%d", &x)
+	fmt.Scanf("%d", &weight)
 
-	fmt.Printf("Perimeter: %d\n", 4*x)
-	fmt.Printf("Area: %d\n", x*x)
-	fmt.Printf("Diameter: %.2f\n", math.Sqrt(2)*float64(x))
-	fmt.Printf("Inside Circle: %.2f\n", 3.14*float64(x*x)*0.25)
-	fmt.Printf("Outside Circle: %.2f\n", 3.14*math.Sqrt(2)*float64(x))
+	if weight < 100 {
+		cost = 1000
+	} else if weight < 200 {
+		cost = 1500
+	} else if weight < 300 {
+		cost = 2000
+	} else if weight < 500 {
+		cost = 3000
+	} else {
+		cost = 3000
+		cost += ((weight - 500) / 100) * 500
+	}
+
+	fmt.Printf("Cost = %d\n", cost)
 }
