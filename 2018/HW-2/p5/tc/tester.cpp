@@ -8,6 +8,7 @@
 
 using namespace std;
 
+const double err = 0.1;
 
 int main(int argc, char const *argv[])
 {
@@ -25,7 +26,7 @@ int main(int argc, char const *argv[])
     if (perimeter != "Perimeter:") {
         return 1;
     }
-    if (abs(test_p - user_p) > 0.05) {
+    if (abs(test_p - user_p) > err) {
         return 1;
     }
 
@@ -37,7 +38,7 @@ int main(int argc, char const *argv[])
     if (area != "Area:") {
         return 1;
     }
-    if (abs(test_a - user_a) > 0.05) {
+    if (abs(test_a - user_a) > err) {
         return 1;
     }
 
