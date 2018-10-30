@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     double test_p, user_p;
     test_out >> perimeter >> test_p;
     user_out >> perimeter >> user_p;
-    if (perimeter != "Permeter:") {
+    if (perimeter != "Perimeter:") {
         return 1;
     }
     if (abs(test_p - user_p) > 0.05) {
