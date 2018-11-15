@@ -26,7 +26,7 @@ func main() {
 
 	for end >= start {
 		i := (start + end) / 2
-		if 5*i*(i+1)/2 > contestTime {
+		if 15*i*(i+1)/2 > contestTime {
 			end = i - 1
 		} else {
 			start = i + 1
