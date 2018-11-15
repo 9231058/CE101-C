@@ -44,7 +44,7 @@ new_game:
         // incorrect: Incorrect :( :P
         for (int i = 0; i < number; i++) {
             string user_status;
-            getline(cin, user_status);
+            getline(user_out, user_status);
         }
 
         double user_ratio;
