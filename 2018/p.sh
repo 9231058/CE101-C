@@ -38,6 +38,28 @@ if ! [ -f $tc/tester.cpp ]; then
                 exit
         fi
 
+        # if there is a generator.go in test cases folder first generates inputs based on it.
+        if [ -f $tc/generator.go ]; then
+                OIFS=$IFS
+                IFS=';' # split output based on ';' instead of newline
+                i=0
+                echo "[beta] Generates test case based on generator.go"
+
+                start=$(date +'%s')
+
+                for input in $(go run $tc/generator.go); do
+                        i=$(( i + 1 ))
+                        echo $input > "$tc/in/input$i.txt"
+
+                        echo "Case $i: $tc/in/input$i.txt"
+                        echo
+                done
+                IFS=$OIFS
+
+                took=$(( $(date +'%s') - $start ))
+                printf "$tc/generator.go Took %ds.\n" $took
+        fi
+
         for input in "$tc/in/"*.txt; do
                 i=$(basename $input)
                 i=${i#input}
