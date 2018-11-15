@@ -30,22 +30,21 @@ new_game:
         for (int i = 0; i < number; i++) {
             int user_number;
             int test_number;
-            string user_status; // user checks correction in his/her program
 
             user_out >> user_number;
-            user_out >> user_status;
             test_in >> test_number;
 
             if (user_number == test_number) {
-                if (user_status != "Correct") {
-                    return 1;
-                }
                 corrects++;
-            } else {
-                if (user_status != "Incorrect") {
-                    return 1;
-                }
             }
+        }
+
+        // reads user generated status
+        // correct: Correct :) :D
+        // incorrect: Incorrect :( :P
+        for (int i = 0; i < number; i++) {
+            string user_status;
+            getline(cin, user_status);
         }
 
         double user_ratio;
@@ -64,6 +63,11 @@ new_game:
     string menu_2;
     string menu_3;
     string menu_4;
+
+    getline(cin, menu_1);
+    getline(cin, menu_2);
+    getline(cin, menu_3);
+    getline(cin, menu_4);
 
     /*
      * 1) Continue
