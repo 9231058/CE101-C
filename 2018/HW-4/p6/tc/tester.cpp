@@ -42,6 +42,16 @@ new_game:
             } else {
                 state[i] = false;
             }
+
+            // check number of digits
+            int d = 0;
+            while (user_number != 0) {
+                user_number = user_number / 10;
+                d++;
+            }
+            if (d != digit) {
+                return 1;
+            }
         }
 
         // reads user generated status
