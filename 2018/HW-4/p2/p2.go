@@ -23,13 +23,13 @@ func main() {
 	// found idicates the leftmost place that digit `a` happens in `n`
 	found := 0
 	// digit counter
-	d := 1
+	d := 0
 
 	for n != 0 {
+		d++
 		if n%10 == a {
 			found = d
 		}
-		d++
 		n = n / 10
 	}
 
