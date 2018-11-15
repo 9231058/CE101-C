@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <limits>
 #include <cmath>
 
 using namespace std;
@@ -25,6 +26,7 @@ int main(int argc, char const *argv[])
 new_game:
     for (int run = 0; run < 5; run++) {
         int corrects = 0;
+        bool state[number];
 
         // reads user generated numbers and compare them with test case numbers
         for (int i = 0; i < number; i++) {
@@ -35,16 +37,36 @@ new_game:
             test_in >> test_number;
 
             if (user_number == test_number) {
+                state[i] = true;
                 corrects++;
+            } else {
+                state[i] = false;
+            }
+
+            // check number of digits
+            int d = 0;
+            while (user_number != 0) {
+                user_number = user_number / 10;
+                d++;
+            }
+            if (d != digit) {
+                return 1;
             }
         }
 
         // reads user generated status
         // correct: Correct :) :D
         // incorrect: Incorrect :( :P
+        user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
         for (int i = 0; i < number; i++) {
             string user_status;
-            getline(cin, user_status);
+            getline(user_out, user_status);
+            if (state[i] && user_status != "Correct :) :D") {
+                return 1;
+            }
+            if (!state[i] && user_status != "Incorrect :( :P") {
+                return 1;
+            }
         }
 
         double user_ratio;
@@ -57,6 +79,7 @@ new_game:
         }
     }
 
+    user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
     // reads user's menu
     // each menu on its line
     string menu_1;
@@ -64,10 +87,10 @@ new_game:
     string menu_3;
     string menu_4;
 
-    getline(cin, menu_1);
-    getline(cin, menu_2);
-    getline(cin, menu_3);
-    getline(cin, menu_4);
+    getline(user_out, menu_1);
+    getline(user_out, menu_2);
+    getline(user_out, menu_3);
+    getline(user_out, menu_4);
 
     /*
      * 1) Continue
@@ -75,6 +98,18 @@ new_game:
      * 3) Increase digits
      * 4) End
      */
+    if (menu_1 != "1)Continue") {
+        return 1;
+    }
+    if (menu_2 != "2)Increase numbers") {
+        return 1;
+    }
+    if (menu_3 != "3)Increase digits") {
+        return 1;
+    }
+    if (menu_4 != "4)End") {
+        return 1;
+    }
 
     int choice;
     test_in >> choice;
