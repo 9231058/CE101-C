@@ -94,6 +94,7 @@ Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahe
 
 ### Fall-2018
 * [Parsa Eskandarnejad](https://github.com/parsaaes)
+* [Sepehr Akhoundi](https://github.com/Sepehr1812)
 * [Amirhosein Khoshbin](https://github.com/AOptimist)
 * [Muhammad Azhdari](https://github.com/mmdaz)
 * [Mohsen Mohammadi](https://github.com/MrMiM77)
