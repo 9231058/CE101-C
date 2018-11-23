@@ -52,8 +52,6 @@ int main(int argc, char const *argv[])
         test_in >> vector2[i];
     }
 
-    // user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
-
     // reads user's menu
     // each menu on its line
     string menu_1;
@@ -112,30 +110,179 @@ menu:
 
     int choice;
     test_in >> choice;
+    int chosen_vector;
+    int norm_1;
+    int norm_2;
 
     switch (choice) {
-        case 1:
+        case 1: // add
+            if (vector1_size != vector2_size) {
+                getline(user_out, user_prompt);
+                if (user_prompt != "Invalid Operation")
+                    return 1;
+            } else {
+                for (int i = 0; i < vector1_size; i++) {
+                    int result;
+                    user_out >> result;
+                    if (result != vector1[i] + vector2[i]) {
+                        return 1;
+                    }
+                }
+                user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
+            }
             goto menu;
             break;
-        case 2:
+        case 2: // subtract
+            if (vector1_size != vector2_size) {
+                getline(user_out, user_prompt);
+                if (user_prompt != "Invalid Operation")
+                    return 1;
+            } else {
+                for (int i = 0; i < vector1_size; i++) {
+                    int result;
+                    user_out >> result;
+                    if (result != vector1[i] - vector2[i]) {
+                        return 1;
+                    }
+                }
+                user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
+            }
             goto menu;
             break;
-        case 3:
+        case 3: // inner product
+            if (vector1_size != vector2_size) {
+                getline(user_out, user_prompt);
+                if (user_prompt != "Invalid Operation")
+                    return 1;
+            } else {
+                int result = 0;
+                for (int i = 0; i < vector1_size; i++) {
+                    result += vector1[i] * vector2[i];
+                }
+                int user_result;
+                user_out >> user_result;
+                if (result != user_result) {
+                    return 1;
+                }
+                user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
+            }
             goto menu;
             break;
-        case 4:
+        case 4: // min
+            norm_1 = 0;
+            for (int i = 0; i < vector1_size; i++) {
+                norm_1 = vector1[i] * vector1[i];
+            }
+            norm_2 = 0;
+            for (int i = 0; i < vector2_size; i++) {
+                norm_2 = vector2[i] * vector2[i];
+            }
+            if (norm_2 < norm_1) {
+                for (int i = 0; i < vector2_size; i++) {
+                    int result;
+                    user_out >> result;
+                    if (result != vector2[i]) {
+                        return 1;
+                    }
+                }
+            } else {
+                for (int i = 0; i < vector1_size; i++) {
+                    int result;
+                    user_out >> result;
+                    if (result != vector1[i]) {
+                        return 1;
+                    }
+                }
+            }
+            user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
             goto menu;
             break;
-        case 5:
+        case 5: // max
+            norm_1 = 0;
+            for (int i = 0; i < vector1_size; i++) {
+                norm_1 = vector1[i] * vector1[i];
+            }
+            norm_2 = 0;
+            for (int i = 0; i < vector2_size; i++) {
+                norm_2 = vector2[i] * vector2[i];
+            }
+            if (norm_2 > norm_1) {
+                for (int i = 0; i < vector2_size; i++) {
+                    int result;
+                    user_out >> result;
+                    if (result != vector2[i]) {
+                        return 1;
+                    }
+                }
+            } else {
+                for (int i = 0; i < vector1_size; i++) {
+                    int result;
+                    user_out >> result;
+                    if (result != vector1[i]) {
+                        return 1;
+                    }
+                }
+            }
+            user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
             goto menu;
             break;
-        case 6:
+        case 6: // change
+            getline(user_out, user_prompt);
+            if (user_prompt != "Choose vector")
+                return 1;
+            test_in >> chosen_vector;
+            getline(user_out, user_prompt);
+            switch (chosen_vector) {
+                case 1:
+                    if (user_prompt != "Enter new vector 1")
+                        return 1;
+                    for (int i = 0; i < vector1_size; i++) {
+                        int element;
+                        test_in >> element;
+                        vector1[i] = element;
+                    }
+                case 2:
+                    if (user_prompt != "Enter new vector 2")
+                        return 1;
+                    for (int i = 0; i < vector2_size; i++) {
+                        int element;
+                        test_in >> element;
+                        vector2[i] = element;
+                    }
+                default:
+                    return 1;
+            }
             goto menu;
             break;
-        case 7:
+        case 7: // print
+            getline(user_out, user_prompt);
+            if (user_prompt != "Choose vector")
+                return 1;
+            test_in >> chosen_vector;
+            switch (chosen_vector) {
+                case 1:
+                    for (int i = 0; i < vector1_size; i++) {
+                        int element;
+                        user_out >> element;
+                        if (element != vector1[i]) {
+                            return 1;
+                        }
+                    }
+                case 2:
+                    for (int i = 0; i < vector2_size; i++) {
+                        int element;
+                        user_out >> element;
+                        if (element != vector2[i]) {
+                            return 1;
+                        }
+                    }
+                default:
+                    return 1;
+            }
+            user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
             goto menu;
             break;
-        case 8:
+        case 8: // exit
             break;
         default:
             return 1;
