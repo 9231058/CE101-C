@@ -111,8 +111,6 @@ menu:
     int choice;
     test_in >> choice;
     int chosen_vector;
-    int norm_1;
-    int norm_2;
 
     switch (choice) {
         case 1: // add
@@ -169,58 +167,59 @@ menu:
             goto menu;
             break;
         case 4: // min
-            norm_1 = 0;
-            for (int i = 0; i < vector1_size; i++) {
-                norm_1 = vector1[i] * vector1[i];
-            }
-            norm_2 = 0;
-            for (int i = 0; i < vector2_size; i++) {
-                norm_2 = vector2[i] * vector2[i];
-            }
-            if (norm_2 < norm_1) {
-                for (int i = 0; i < vector2_size; i++) {
-                    int result;
-                    user_out >> result;
-                    if (result != vector2[i]) {
-                        return 1;
+            getline(user_out, user_prompt);
+            if (user_prompt != "Choose vector")
+                return 1;
+            test_in >> chosen_vector;
+            getline(user_out, user_prompt);
+            int min_index;
+            user_out >> min_index;
+            switch (chosen_vector) {
+                case 1:
+                    for (int i = 0; i < vector1_size; i++) {
+                        if (vector1[min_index] > vector1[i]) {
+                            return 1;
+                        }
                     }
-                }
-            } else {
-                for (int i = 0; i < vector1_size; i++) {
-                    int result;
-                    user_out >> result;
-                    if (result != vector1[i]) {
-                        return 1;
+                    break;
+                case 2:
+                    for (int i = 0; i < vector2_size; i++) {
+                        if (vector2[min_index] > vector2[i]) {
+                            return 1;
+                        }
                     }
-                }
+                    break;
+                default:
+                    return 1;
             }
             user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
             goto menu;
             break;
         case 5: // max
-            for (int i = 0; i < vector1_size; i++) {
-                norm_1 = vector1[i] * vector1[i];
-            }
-            norm_2 = 0;
-            for (int i = 0; i < vector2_size; i++) {
-                norm_2 = vector2[i] * vector2[i];
-            }
-            if (norm_2 > norm_1) {
-                for (int i = 0; i < vector2_size; i++) {
-                    int result;
-                    user_out >> result;
-                    if (result != vector2[i]) {
-                        return 1;
+            getline(user_out, user_prompt);
+            if (user_prompt != "Choose vector")
+                return 1;
+            test_in >> chosen_vector;
+            getline(user_out, user_prompt);
+            int max_index;
+            user_out >> max_index;
+            switch (chosen_vector) {
+                case 1:
+                    for (int i = 0; i < vector1_size; i++) {
+                        if (vector1[min_index] > vector1[i]) {
+                            return 1;
+                        }
                     }
-                }
-            } else {
-                for (int i = 0; i < vector1_size; i++) {
-                    int result;
-                    user_out >> result;
-                    if (result != vector1[i]) {
-                        return 1;
+                    break;
+                case 2:
+                    for (int i = 0; i < vector2_size; i++) {
+                        if (vector2[min_index] > vector2[i]) {
+                            return 1;
+                        }
                     }
-                }
+                    break;
+                default:
+                    return 1;
             }
             user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
             goto menu;
