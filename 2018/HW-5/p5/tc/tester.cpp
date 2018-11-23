@@ -166,24 +166,24 @@ menu:
             }
             goto menu;
             break;
-        case 4: // min
+        case 4: // max
             getline(user_out, user_prompt);
             if (user_prompt != "Choose vector")
                 return 1;
             test_in >> chosen_vector;
-            int min_index;
-            user_out >> min_index;
+            int max_index;
+            user_out >> max_index;
             switch (chosen_vector) {
                 case 1:
                     for (int i = 0; i < vector1_size; i++) {
-                        if (vector1[min_index] > vector1[i]) {
+                        if (vector1[max_index] < vector1[i]) {
                             return 1;
                         }
                     }
                     break;
                 case 2:
                     for (int i = 0; i < vector2_size; i++) {
-                        if (vector2[min_index] > vector2[i]) {
+                        if (vector2[max_index] < vector2[i]) {
                             return 1;
                         }
                     }
@@ -194,13 +194,13 @@ menu:
             user_out.ignore(numeric_limits<streamsize>::max(), '\n'); // consumes all new-line characters
             goto menu;
             break;
-        case 5: // max
+        case 5: // min
             getline(user_out, user_prompt);
             if (user_prompt != "Choose vector")
                 return 1;
             test_in >> chosen_vector;
-            int max_index;
-            user_out >> max_index;
+            int min_index;
+            user_out >> min_index;
             switch (chosen_vector) {
                 case 1:
                     for (int i = 0; i < vector1_size; i++) {
@@ -237,6 +237,7 @@ menu:
                         test_in >> element;
                         vector1[i] = element;
                     }
+                    break;
                 case 2:
                     if (user_prompt != "Enter new vector 2")
                         return 1;
@@ -245,6 +246,7 @@ menu:
                         test_in >> element;
                         vector2[i] = element;
                     }
+                    break;
                 default:
                     return 1;
             }
@@ -264,6 +266,7 @@ menu:
                             return 1;
                         }
                     }
+                    break;
                 case 2:
                     for (int i = 0; i < vector2_size; i++) {
                         int element;
@@ -272,6 +275,7 @@ menu:
                             return 1;
                         }
                     }
+                    break;
                 default:
                     return 1;
             }
