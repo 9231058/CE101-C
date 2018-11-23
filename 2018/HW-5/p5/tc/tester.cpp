@@ -52,6 +52,7 @@ int main(int argc, char const *argv[])
         test_in >> vector2[i];
     }
 
+menu:
     // reads user's menu
     // each menu on its line
     string menu_1;
@@ -72,7 +73,6 @@ int main(int argc, char const *argv[])
     getline(user_out, menu_7);
     getline(user_out, menu_8);
 
-menu:
     /*
      * 1) Add
      * 2) Sub
@@ -198,7 +198,6 @@ menu:
             goto menu;
             break;
         case 5: // max
-            norm_1 = 0;
             for (int i = 0; i < vector1_size; i++) {
                 norm_1 = vector1[i] * vector1[i];
             }
