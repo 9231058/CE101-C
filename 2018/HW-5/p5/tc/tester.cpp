@@ -171,7 +171,6 @@ menu:
             if (user_prompt != "Choose vector")
                 return 1;
             test_in >> chosen_vector;
-            getline(user_out, user_prompt);
             int min_index;
             user_out >> min_index;
             switch (chosen_vector) {
@@ -200,7 +199,6 @@ menu:
             if (user_prompt != "Choose vector")
                 return 1;
             test_in >> chosen_vector;
-            getline(user_out, user_prompt);
             int max_index;
             user_out >> max_index;
             switch (chosen_vector) {
