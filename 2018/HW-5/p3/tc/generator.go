@@ -20,7 +20,7 @@ import (
 
 func main() {
 	for i := 0; i < 20; i++ {
-		n := rand.Intn(20)
+		n := rand.Intn(20) + 1
 
 		fmt.Printf("%d;", n)
 	}
