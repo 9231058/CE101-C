@@ -16,7 +16,16 @@ For homework problems and more materials about the course see [here](http://ceit
 Source codes of Homework are written in Go and C.
 Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahel-font) and [Vazir](https://github.com/rastikerdar/vazir-font) fonts.
 
-## Teaching Assistants Classes Topics
+## Topics
+## Assignments
+- HW1: Algorithm Design
+- HW2: Caculation (with an introduction to `math.h`) and Interaction (`scanf()` and `printf()`)
+- HW3: Decision Making
+- HW4: Loops
+- HW5: Functions
+- HW6: Mid-Term Project
+
+## Teaching Assistants Classes
 ### Session 1
 - Algorithms
     * Finding a Minimum
