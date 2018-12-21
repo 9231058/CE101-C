@@ -1,0 +1,7 @@
+6
+a 1
+for 1
+is 3
+string 2
+test 5
+this 1
