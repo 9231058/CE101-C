@@ -1,0 +1,9 @@
+Soldiers in some part of empire are not doing so well. We could cut funds by reducing their numbers.
+Yes, reduce their numbers.
+-5
+0
+5
+No, we need them.
+0
+0
+-10

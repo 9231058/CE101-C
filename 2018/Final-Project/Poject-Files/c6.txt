@@ -1,0 +1,9 @@
+Your family members want you to increase their salaries.
+Increase their salaries.
+-10
+10 
+-5
+It's nonsense.
+10
+-10 
+5

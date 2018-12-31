@@ -1,0 +1,9 @@
+We would like to hold a ceremony in the memorial of the soldiers who died in the last conflict against the western empires.
+Do it for our brave soldiers.
+5
+5 
+-10
+We don't have enough time for this ceremony.
+-5
+0
+5
