@@ -8,8 +8,8 @@
 # [] Created By : Parham Alvani <parham.alvani@gmail.com>
 # =======================================
 
-# This script is created based on Quera
-# per question user code format so it assume
+# This script is created based on Quera's
+# per question user submissions format so it assumes
 # following format:
 # /
 # -- 9231058/hello.c
