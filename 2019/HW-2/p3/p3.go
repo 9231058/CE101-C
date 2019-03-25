@@ -25,7 +25,7 @@ func main() {
 	fmt.Printf("a: %.02f\n", resultA)
 
 	// caculates the (b) section of problem 3
-	resultB := math.Pow(10, math.Log(math.Abs(a+math.Sin(b)+math.Tan(c))))
+	resultB := math.Pow(10, math.Log10(math.Abs(a+math.Sin(b)+math.Tan(c))))
 	fmt.Printf("b: %.02f\n", resultB)
 
 	// caculates the (c) section of problem 3
