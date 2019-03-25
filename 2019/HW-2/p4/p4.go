@@ -9,9 +9,13 @@ func main() {
 
 	diff := (s2*60 + m2 - (s1*60 + m1))
 
-	if diff%x == 0 {
-		fmt.Println(0)
+	if diff < 0 {
+		fmt.Println(-diff)
 	} else {
-		fmt.Println(x - diff%x)
+		if diff%x == 0 {
+			fmt.Println(0)
+		} else {
+			fmt.Println(x - diff%x)
+		}
 	}
 }
