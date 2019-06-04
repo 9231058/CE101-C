@@ -24,6 +24,7 @@ Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahe
 - HW4: Loops
 - HW5: Functions
 - HW6: Mid-Term Project
+- HW7: Pointer, Structs and Files
 
 ## Teaching Assistants Classes
 ### Session 1
