@@ -16,6 +16,29 @@ For homework problems and more materials about the course see [here](http://ceit
 Source codes of Homework are written in Go and C.
 Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahel-font) and [Vazir](https://github.com/rastikerdar/vazir-font) fonts.
 
+## Problem Structure
+Each problem have the following structure:
+
+```
+HW-1\
+    |
+    |- p1\
+    |    |
+    |    |- p1.md
+    |    |- p1.go
+    |    |- tc\
+    |    |     |- in
+    |    |     |- out
+    |
+    |- p2\
+```
+
+`p.sh` creates the zip file that can be uplaoded to Quera website based on the above structure. It feeds the inputs
+from `in` folder into `p.go` then puts the results into `out` folder.
+
+If there is a file with `generator.go` name in `tc` folder the `p.sh` use it to generate the test cases into
+`in` folder.
+
 ## Topics
 - Lecture 3: Basic C Programming
 - Lecture 4: Calculations
