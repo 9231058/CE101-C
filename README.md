@@ -17,6 +17,18 @@ Source codes of Homework are written in Go and C.
 Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahel-font) and [Vazir](https://github.com/rastikerdar/vazir-font) fonts.
 
 ## Topics
+- Lecture 3: Basic C Programming
+- Lecture 4: Calculations
+- Lecture 5: Interaction
+- Lecture 6: Making Decisions
+- Lecture 7: Repeating Statements
+- Lecture 8: Functions
+- Lecture 9: Arrays
+- Lecture 10: Pointers & Dynamic Memory
+- Lecture 11: Structures
+- Lecture 12: Files
+- Lecture 13: Miscellaneous
+
 ## Assignments
 - HW1: Algorithm Design
 - HW2: Caculation (with an introduction to `math.h`) and Interaction (`scanf()` and `printf()`)
