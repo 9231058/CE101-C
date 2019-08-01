@@ -13,7 +13,7 @@ For homework problems and more materials about the course see [here](http://ceit
 - [Fall-2018](https://trello.com/b/HGB2XpUD)
 
 ## Requirements
-Source codes of Homework are written in Go and C.
+Source codes of Homework are written in [Go](https://golang.org/) and C.
 Documentations are in Word and needs [Sahel](https://github.com/rastikerdar/sahel-font) and [Vazir](https://github.com/rastikerdar/vazir-font) fonts.
 
 ## Problem Structure
