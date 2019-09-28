@@ -4,6 +4,7 @@ stages:
   - deploy
 
 pages:
+  stage: deploy
   script:
     - mv docs public
   artifacts:
