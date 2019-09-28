@@ -1,0 +1,11 @@
+---
+
+stages:
+  - deploy
+
+pages:
+  script:
+    - mv docs public
+  artifacts:
+    paths:
+      - public
