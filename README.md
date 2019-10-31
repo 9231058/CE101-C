@@ -61,7 +61,7 @@ If there is a file with `generator.go` name in `tc` folder the `p.sh` use it to 
 - HW6: Mid-Term Project
 - HW7: Pointer, Structs and Files
 
-## Teaching Assistants Classes
+## Workshops
 - Introduction-1
 - Introduction-2
 - Algorithm
