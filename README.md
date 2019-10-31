@@ -131,7 +131,7 @@ If there is a file with `generator.go` name in `tc` folder the `p.sh` use it to 
 * [Mahvash Siavashpour](https://github.com/mahvash-siavashpour) (Lab)
 * [Mohsen Mohammadi](https://github.com/MrMiM77)
 * [Seyed Mohamad Fatemi](https://github.com/smf8)
-* [Saman Hoseini]()
+* [Saman Hoseini](https://github.com/saman2000hoseini)
 * [Mahin Mirshams](https://github.com/mahinmirshams)
 * [Mohammad Javad Ardestani](https://github.com/mohammadjavadArdestani) (Lab)
 * [Niki Pourazin](https://github.com/npourazin)
