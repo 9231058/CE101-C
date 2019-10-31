@@ -62,53 +62,19 @@ If there is a file with `generator.go` name in `tc` folder the `p.sh` use it to 
 - HW7: Pointer, Structs and Files
 
 ## Teaching Assistants Classes
-### Session 1
-- Algorithms
-    * Finding a Minimum
-    * GCD
-    * Fibonacci
-    * Hanoi Tower
-    * Binary search
-- Flow Chart
-- Debugging
-    * Tracing by Hand
-
-### Session 2
-- Algorithms
-    * Binary Search
-- HW-1
-
-### Session 3
-- CodeBlocks Installation
-- CodeBlocks Examples
-    * GCD
-    * Prime/Not Prime
-    * Random [a, b]
-- Debugging
-    * CodeBlocks Debugger
-
-### Session 4
-- HW-2
-- Pseudo Random Number Generation
-
-### Session 5
-- Integer Factorization
-- [Min - Max - Average] in array of numbers
-- Square Root
-
-### Session 6
-- HW-3
-
-### Session 7
-- Lazy Operations in OR-AND
-- HW-4
-
-### Session 8
-- Midterm sample
-- Static variables in functions
-
-### Session 9
-- HW-5
+- Introduction-1
+- Introduction-2
+- Algorithm
+- Clion
+- I/O, Calculation
+- Decision
+- Loop
+- Midterm Review
+- Functions
+- Arrays
+- Mini Project
+- Pointers and Arguments
+- Linked Lists
 
 ## Teaching Assistants over Semesters
 ### Fall-2014
@@ -159,14 +125,14 @@ If there is a file with `generator.go` name in `tc` folder the `p.sh` use it to 
 
 ### Fall-2019
 
-* [Amin Rashidbeigi](https://github.com/aminrashidbeigi)
-* [Mohammad Mashayekh]()
-* [MohamadHasan Taghadosi](https://github.com/taghad)
-* [Mahvash Siavashpour](https://github.com/mahvash-siavashpour)
+* [Amin Rashidbeigi](https://github.com/aminrashidbeigi) (Lab)
+* [Mohammad Mashayekh]() (Lab)
+* [MohamadHasan Taghadosi](https://github.com/taghad) (Lab)
+* [Mahvash Siavashpour](https://github.com/mahvash-siavashpour) (Lab)
 * [Mohsen Mohammadi](https://github.com/MrMiM77)
 * [Seyed Mohamad Fatemi](https://github.com/smf8)
 * [Saman Hoseini]()
 * [Mahin Mirshams](https://github.com/mahinmirshams)
-* [Mohammad Javad Ardestani](https://github.com/mohammadjavadArdestani)
+* [Mohammad Javad Ardestani](https://github.com/mohammadjavadArdestani) (Lab)
 * [Niki Pourazin](https://github.com/npourazin)
-* [Parham Alvani](https://github.com/1995parham)
+* [Parham Alvani](https://github.com/1995parham) (Lab)
