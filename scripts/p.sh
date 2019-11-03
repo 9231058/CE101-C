@@ -11,20 +11,30 @@
 # =======================================
 current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-usage() {
-        echo "this script create the zip folder for the given problem that can be uploaded to Quera website"
-        echo "$0 [hw-?] [p?]"
+die() {
+        echo $@
+        exit
 }
 
-if [ $# -ne 2 ]; then
+usage() {
+        echo "this script create the zip folder for the given problem that can be uploaded to Quera website"
+        echo "$0 [year] [semester] [hw-?] [p?]"
+}
+
+if [ $# -ne 4 ]; then
         usage
         exit
 fi
 
-hw="HW-$1"
-p="p$2"
-tc="$current_dir/$hw/$p/tc"    # problem test cases directory
-go="$current_dir/$hw/$p/$p.go" # problem solution in Go
+echo $1 | grep -E -q '^[0-9]{4}$' || die "4-digit year required, $1 provided"
+echo $2 | grep -E -q 'Fall|Spring' || die "semester must be 'Fall' or 'Spring', $2 provided"
+
+year=$1
+semester=$2
+hw="HW-$3"
+p="p$4"
+tc="$current_dir/../$semester-$year/$hw/$p/tc"    # problem test cases directory
+go="$current_dir/../$semester-$year/$hw/$p/$p.go" # problem solution in Go
 
 if ! [ -d $tc ]; then
         echo "there is no test case folder in $tc"
