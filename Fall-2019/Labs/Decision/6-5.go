@@ -20,7 +20,9 @@ import (
 
 func main() {
 	var n int
-	fmt.Scanf("%d", &n)
+	if _, err := fmt.Scanf("%d", &n); err != nil {
+		return
+	}
 
 	fmt.Println(intToRoman(n))
 }
