@@ -44,11 +44,6 @@ fi
 # if there is a tester.cpp in test cases folder there is no need to generate
 # output files
 if ! [ -f $tc/tester.cpp ]; then
-        if ! [ -f $go ]; then
-                echo "there is no go source in $go"
-                exit
-        fi
-
         # if there is a generator.go in test cases folder first generates inputs based on it.
         if [ -f $tc/generator.go ]; then
                 OIFS=$IFS
@@ -71,21 +66,29 @@ if ! [ -f $tc/tester.cpp ]; then
                 printf "$tc/generator.go took %ds.\n" $took
         fi
 
-        for input in "$tc/in/"*.txt; do
-                i=$(basename $input)
-                i=${i#input}
-                i=${i%.txt}
+        if ! [ -f $go ]; then
+                echo "there is no go source in $go"
+                echo "try to generate zip based on current status of tc folder"
+                if ! [ -d $tc/in ] || ! [ -d $tc/out ]; then
+                        exit
+                fi
+        else
+                for input in "$tc/in/"*.txt; do
+                        i=$(basename $input)
+                        i=${i#input}
+                        i=${i%.txt}
 
-                start=$(date +'%s')
+                        start=$(date +'%s')
 
-                go run $go < $input > "$tc/out/output$i.txt"
+                        go run $go < $input > "$tc/out/output$i.txt"
 
-                took=$(( $(date +'%s') - $start ))
-                printf "$go took %ds.\n" $took
+                        took=$(( $(date +'%s') - $start ))
+                        printf "$go took %ds.\n" $took
 
-                echo "test $i: $input --> $tc/out/output$i.txt"
-                echo
-        done
+                        echo "test $i: $input --> $tc/out/output$i.txt"
+                        echo
+                done
+        fi
 else
         echo "you are using Quera tester.cpp, please make sure you know what you are doing"
 fi
