@@ -52,8 +52,9 @@ func main() {
 
 	if p == 4 {
 		fmt.Println("true")
+	} else {
+		fmt.Println("false")
 	}
-	fmt.Println("false")
 }
 
 func length(x1, y1, x2, y2 int) int {
