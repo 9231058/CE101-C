@@ -5,9 +5,9 @@
  * +===============================================
  * | Author:        Parham Alvani <parham.alvani@gmail.com>
  * |
- * | Creation Date: 12-11-2019
+ * | Creation Date: 11-11-2019
  * |
- * | File Name:     8-9.go
+ * | File Name:     7-3.go
  * +===============================================
  */
 
@@ -20,17 +20,10 @@ func main() {
 
 	fmt.Scanf("%d", &n)
 
-	fmt.Println(countNumbersWithUniqueDigits(n))
-}
-
-func countNumbersWithUniqueDigits(n int) int {
-	c := 1
 	for i := 1; i <= n; i++ {
-		p := 9
-		for j := 0; j < i-1; j++ {
-			p *= (9 - j)
+		for j := 0; j < i; j++ {
+			fmt.Print("*")
 		}
-		c += p
+		fmt.Println()
 	}
-	return c
 }

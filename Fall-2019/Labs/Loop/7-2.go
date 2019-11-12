@@ -7,7 +7,7 @@
  * |
  * | Creation Date: 12-11-2019
  * |
- * | File Name:     8-7.go
+ * | File Name:     7-2.go
  * +===============================================
  */
 
@@ -20,12 +20,18 @@ func main() {
 
 	fmt.Scanf("%d", &n)
 
-	sum := 0
-	for i := 1; i < n; i++ {
-		if n%i == 0 {
-			sum += i
-		}
+	p := 1 << n
+
+	var lsum float64
+	var rsum float64
+
+	for i := 1; i <= p; i++ {
+		lsum += 1.0 / float64(i)
 	}
 
-	fmt.Println(sum == n)
+	for i := p; i >= 1; i-- {
+		rsum += 1.0 / float64(i)
+	}
+
+	fmt.Println(rsum == lsum)
 }

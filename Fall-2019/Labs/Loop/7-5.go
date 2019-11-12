@@ -5,24 +5,28 @@
  * +===============================================
  * | Author:        Parham Alvani <parham.alvani@gmail.com>
  * |
- * | Creation Date: 11-11-2019
+ * | Creation Date: 12-11-2019
  * |
- * | File Name:     8-6.go
+ * | File Name:     7-5.go
  * +===============================================
  */
 
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 func main() {
-	var p int
+	var n int
 
-	fmt.Scanf("%d", &p)
+	fmt.Scanf("%d", &n)
 
-	sp := math.Sqrt(float64(p))
-	fmt.Println(sp == math.Round(sp))
+	sum := 0
+
+	for i := 0; i < n; i++ {
+		var c int
+		fmt.Scanf("%d", &c)
+		sum += c
+	}
+
+	fmt.Println((n*(n+1))/2 - sum)
 }
