@@ -24,5 +24,15 @@ func main() {
 	fmt.Scanf("%d", &p)
 
 	sp := math.Sqrt(float64(p))
-	fmt.Println(sp == math.Round(sp))
+	if sp == math.Round(sp) {
+		for i := 2; i < int(sp); i++ {
+			if int(sp)%i == 0 {
+				fmt.Println("false")
+				return
+			}
+		}
+		fmt.Println("true")
+	} else {
+		fmt.Println("false")
+	}
 }
