@@ -7,13 +7,13 @@
  *
  * [] Created By : Parham Alvani <parham.alvani@gmail.com>
  * =======================================
-*/
+ */
 /*
-* Copyright (c)  2019 Parham Alvani.
-*/
+ * Copyright (c)  2019 Parham Alvani.
+ */
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 int main(int argc, char *argv[]) {
   char input[200];

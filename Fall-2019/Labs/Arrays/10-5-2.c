@@ -7,10 +7,10 @@
  *
  * [] Created By : Parham Alvani <parham.alvani@gmail.com>
  * =======================================
-*/
+ */
 /*
-* Copyright (c)  2019 Parham Alvani.
-*/
+ * Copyright (c)  2019 Parham Alvani.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,6 +33,6 @@ int main(int argc, char *argv[]) {
       C[i][j] = C[i - 1][j - 1] + C[i - 1][j];
     }
   }
-  
+
   printf("%d\n", C[n][m]);
 }

@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main(int argc, const char *argv[]) {
   int n;
 
@@ -22,5 +21,4 @@ int main(int argc, const char *argv[]) {
   } else {
     printf("%d\n", b);
   }
-
 }
