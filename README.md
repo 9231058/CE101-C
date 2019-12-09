@@ -65,16 +65,16 @@ If there is a file with `generator.go` name in `tc` folder the `p.sh` use it to 
 - Introduction-1
 - Introduction-2
 - Algorithm
-- Clion
+- Algorithm
 - I/O, Calculation
 - Decision
 - Loop
 - Midterm Review
-- Functions
-- Arrays
-- Mini Project
+- Git
+- Arrays & DP
+- Pointers
 - Pointers and Arguments
-- Linked Lists
+- Linked Lists & Structs
 
 ## Teaching Assistants over Semesters
 ### Fall-2014
