@@ -7,10 +7,10 @@
  *
  * [] Created By : Parham Alvani <parham.alvani@gmail.com>
  * =======================================
-*/
+ */
 /*
-* Copyright (c)  2019 Parham Alvani.
-*/
+ * Copyright (c)  2019 Parham Alvani.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,6 +18,7 @@
 
 int main() {
   char *mem = NULL;
+  int size = 0;
 
   char input[200];
   do {
@@ -25,17 +26,10 @@ int main() {
       return 0;
     }
 
-    char *nmem;
-    if (mem == NULL) {
-      nmem = malloc(sizeof(char) * strlen(input));
-      strcpy(nmem, input);
-    } else {
-      nmem = malloc(sizeof(char) * strlen(input) + strlen(mem));
-      strcpy(nmem, mem);
-      strcpy(nmem + strlen(mem), input);
-    }
-    mem = nmem;
-  } while(strcmp(input, "\n"));
+    mem = realloc(mem, sizeof(char) * (size + strlen(input)));
+    strcpy(mem + size, input);
+    size += strlen(input);
+  } while (strcmp(input, "\n"));
 
   printf("%s", mem);
 }

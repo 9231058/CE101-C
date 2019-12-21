@@ -23,7 +23,6 @@ int main() {
   int size = 10;
   int last_memory = 0;
   char *mem;
-  char **nmemories = NULL;
   char **memories = malloc(size * sizeof(char *));
 
   while (1) {
@@ -35,10 +34,7 @@ int main() {
         mem = add();
         memories[last_memory++] = mem;
         if (last_memory == size) {
-          nmemories = malloc(size * 2 * sizeof(char *));
-          memcpy(nmemories, memories, size * sizeof(char *));
-          free(memories);
-          memories = nmemories;
+          memories = realloc(memories, size * 2 * sizeof(char *));
           size *= 2;
         }
         printf("----\n");
@@ -68,24 +64,17 @@ int menu(void) {
 
 char *add(void) {
   char *mem = NULL;
+  int size = 0;
 
   char input[200];
   do {
     if (fgets(input, 200, stdin) == NULL) {
-      return NULL;
+      return 0;
     }
 
-    char *nmem;
-    if (mem == NULL) {
-      nmem = malloc(sizeof(char) * strlen(input));
-      strcpy(nmem, input);
-    } else {
-      nmem = malloc(sizeof(char) * strlen(input) + strlen(mem));
-      strcpy(nmem, mem);
-      free(mem);
-      strcpy(nmem + strlen(mem), input);
-    }
-    mem = nmem;
+    mem = realloc(mem, sizeof(char) * (size + strlen(input)));
+    strcpy(mem + size, input);
+    size += strlen(input);
   } while(strcmp(input, "\n"));
 
   printf("> %s", mem);
