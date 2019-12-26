@@ -23,6 +23,10 @@ int less_price(const void *a, const void *b) {
   return ((struct menu_item *)a)->price - ((struct menu_item *)b)->price;
 }
 
+int less_price_pointer(const void *a, const void *b) {
+  return (*(struct menu_item **)a)->price - (*(struct menu_item **)b)->price;
+}
+
 struct dish {
   char name[255];
   int price;
@@ -113,4 +117,32 @@ int main() {
     printf("price: %d\n", brewed_coffees[i].price);
     printf("is_double: %d\n", brewed_coffees[i].is_double);
   }
+
+  struct menu_item **items =
+      malloc((number_of_dishes + number_of_herbals + number_of_mocktails +
+              number_of_brewed_coffees) *
+             sizeof(struct menu_item *));
+  int index = 0;
+  for (int i = 0; i < number_of_dishes; i++) {
+    items[index++] = (struct menu_item *)&dishes[i];
+  }
+  for (int i = 0; i < number_of_herbals; i++) {
+    items[index++] = (struct menu_item *)&herbals[i];
+  }
+  for (int i = 0; i < number_of_mocktails; i++) {
+    items[index++] = (struct menu_item *)&mocktails[i];
+  }
+  for (int i = 0; i < number_of_brewed_coffees; i++) {
+    items[index++] = (struct menu_item *)&brewed_coffees[i];
+  }
+  qsort(items, index, sizeof(struct menu_item *), less_price_pointer);
+
+  printf("\n\n");
+  printf("Minimum Price Menu Item is:\n");
+  printf("Name: %s\n", (items[0])->name);
+  printf("Price: %d\n", (items[0])->price);
+
+  printf("Maximum Price Menu Item is:\n");
+  printf("Name: %s\n", (items[index - 1])->name);
+  printf("Price: %d\n", (items[index - 1])->price);
 }
