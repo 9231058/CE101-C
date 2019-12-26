@@ -7,10 +7,10 @@
  *
  * [] Created By : Parham Alvani <parham.alvani@gmail.com>
  * =======================================
-*/
+ */
 /*
-* Copyright (c)  2019 Parham Alvani.
-*/
+ * Copyright (c)  2019 Parham Alvani.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,7 +20,7 @@ struct menu_item {
 };
 
 int less_price(const void *a, const void *b) {
-  return ((struct menu_item *) a)->price - ((struct menu_item *) b)->price;
+  return ((struct menu_item *)a)->price - ((struct menu_item *)b)->price;
 }
 
 struct dish {
@@ -29,13 +29,9 @@ struct dish {
 };
 
 struct dish dishes[] = {
-  {"Ghost Dog", 38000},
-  {"Boca Juniors", 45000},
-  {"Jogo Bonito", 45000},
-  {"Hitchcock", 49000},
-  {"Hamlet", 40000},
-  {"Pulp Fiction", 45000}, 
-  {"Hidden", 40000}, 
+    {"Ghost Dog", 38000}, {"Boca Juniors", 45000}, {"Jogo Bonito", 45000},
+    {"Hitchcock", 49000}, {"Hamlet", 40000},       {"Pulp Fiction", 45000},
+    {"Hidden", 40000},
 };
 
 struct herbal {
@@ -44,11 +40,11 @@ struct herbal {
 };
 
 struct herbal herbals[] = {
-  {"The Fish Fall in Love", 18000},
-  {"Honey with Lemon", 16000},
-  {"Green", 15000},
-  {"Mint", 13000},
-  {"Orange Blossom", 15000},
+    {"The Fish Fall in Love", 18000},
+    {"Honey with Lemon", 16000},
+    {"Green", 15000},
+    {"Mint", 13000},
+    {"Orange Blossom", 15000},
 };
 
 struct mocktail {
@@ -57,10 +53,10 @@ struct mocktail {
 };
 
 struct mocktail mocktails[] = {
-  {"Mojito", 20000},
-  {"Limonade", 20000},
-  {"Dark Knight", 25000},
-  {"Heath Ledger", 25000},
+    {"Mojito", 20000},
+    {"Limonade", 20000},
+    {"Dark Knight", 25000},
+    {"Heath Ledger", 25000},
 };
 
 struct brewed_coffee {
@@ -70,9 +66,9 @@ struct brewed_coffee {
 };
 
 struct brewed_coffee brewed_coffees[] = {
-  { "V60", 33000, 1 },
-  { "French Press", 17000, 0 },
-  { "V60", 25000, 0 },
+    {"V60", 33000, 1},
+    {"French Press", 17000, 0},
+    {"V60", 25000, 0},
 };
 
 int main() {
@@ -107,9 +103,11 @@ int main() {
 
   printf("\n\n");
   printf("Brewed Coffees:\n");
-  int number_of_brewed_coffees = sizeof(brewed_coffees) / sizeof(struct brewed_coffee);
+  int number_of_brewed_coffees =
+      sizeof(brewed_coffees) / sizeof(struct brewed_coffee);
 
-  qsort(brewed_coffees, number_of_brewed_coffees, sizeof(struct brewed_coffee), less_price);
+  qsort(brewed_coffees, number_of_brewed_coffees, sizeof(struct brewed_coffee),
+        less_price);
   for (int i = 0; i < number_of_brewed_coffees; i++) {
     printf("name: %s\n", brewed_coffees[i].name);
     printf("price: %d\n", brewed_coffees[i].price);
