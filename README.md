@@ -39,6 +39,27 @@ from `in` folder into `p.go` then puts the results into `out` folder.
 If there is a file with `generator.go` name in `tc` folder the `p.sh` use it to generate the test cases into
 `in` folder.
 
+```go
+package main
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+func main() {
+	fmt.Printf("%d %d;", 1, 10)
+	fmt.Printf("%d %d;", 5, 10)
+
+	for i := 0; i < 20; i++ {
+		m := rand.Intn(100)
+		n := rand.Intn(m)
+
+		fmt.Printf("%d %d;", n, m)
+	}
+}
+```
+
 ## Topics
 - Lecture 3: Basic C Programming
 - Lecture 4: Calculations
