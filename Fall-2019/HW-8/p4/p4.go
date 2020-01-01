@@ -14,9 +14,7 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
 	"sort"
 )
 
@@ -27,8 +25,6 @@ type student struct {
 }
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-
 	var n int
 	if _, err := fmt.Scanf("%d", &n); err != nil {
 		return
@@ -37,13 +33,14 @@ func main() {
 	students := make([]student, n)
 
 	for i := 0; i < n; i++ {
-		name, err := reader.ReadString('\n')
-		if err != nil {
+		var fname, lname string
+		if _, err := fmt.Scanf("%s %s", &fname, &lname); err != nil {
 			return
 		}
-		students[i].name = name
+		students[i].name = fname + " " + lname
 
-		if _, err := fmt.Scanf("%d", &students[i].id); err != nil {
+		if n, err := fmt.Scanf("%d", &students[i].id); err != nil {
+			fmt.Println(n, err)
 			return
 		}
 		if _, err := fmt.Scanf("%d", &students[i].gpa); err != nil {
@@ -59,7 +56,7 @@ func main() {
 	})
 
 	for i := 0; i < n; i++ {
-		fmt.Printf("%s", students[i].name)
+		fmt.Printf("%s\n", students[i].name)
 		fmt.Printf("%d\n", students[i].id)
 		fmt.Printf("%d\n", students[i].gpa)
 	}
