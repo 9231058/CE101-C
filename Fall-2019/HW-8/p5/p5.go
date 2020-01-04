@@ -59,7 +59,7 @@ func main() {
 			}
 		case 3:
 			for i, ph := range phones {
-				fmt.Printf("%d\n", i+1)
+				fmt.Printf("%d)\n", i+1)
 				fmt.Printf("No: %s\n", ph.no)
 				fmt.Printf("Phone: %s\n", ph.phone)
 			}
