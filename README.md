@@ -157,3 +157,18 @@ func main() {
 * [Mohammad Javad Ardestani](https://github.com/mohammadjavadArdestani) (Lab)
 * [Niki Pourazin](https://github.com/npourazin)
 * [Parham Alvani](https://github.com/1995parham) (Lab)
+
+### Spring-2020 
+
+* [Kian Kashfipour](https://github.com/kian79)
+* [Seyed Mohammad Fatemi](https://github.com/smf8)
+* [MohamadHasan Taghadosi](https://github.com/taghad) (Lab)
+* [Roya Taheri](https://github.com/RoyaTaheri) (Lab)
+* [Saman Hoseini](https://github.com/saman2000hoseini)
+* [Maryam Alikarami](https://github.com/malikarami)
+* [Negin Haji Sobhani](https://github.com/neginhsobhani)
+* [Darya Zare](https://github.com/DaryaZareM)
+* [Saeed Maroof](https://gitlab.com/saeed.maroof)
+* [Bahar Kaviani](https://github.com/Baharkaviani)
+* [Parham Alvani](https://github.com/1995parham) (Course instructor)
+
