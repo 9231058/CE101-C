@@ -1,0 +1,2 @@
+Result for "Z" is 2.96
+Result for "X" is -1.764
