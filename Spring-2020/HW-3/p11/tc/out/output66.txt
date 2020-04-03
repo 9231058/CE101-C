@@ -1,0 +1,1 @@
+y axis and x axis distances are : 6 6
