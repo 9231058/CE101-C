@@ -17,7 +17,6 @@ import (
 	"fmt"
 	"os"
 	"sort"
-	"strings"
 )
 
 var reader = bufio.NewReader(os.Stdin)
@@ -32,9 +31,16 @@ func main() {
 		scanf("%d ", &x[i])
 	}
 	sort.Ints(x)
-	sb := new(strings.Builder)
+	sum := int64(0)
 	for i := range x {
-		sb.WriteString(fmt.Sprintf("%d,", x[i]))
+		if i == 0 {
+			sum += int64(x[i])
+			continue
+		}
+		if x[i] != x[i-1] {
+			sum += int64(x[i])
+		}
 	}
-	fmt.Println(sb.String())
+
+	fmt.Println(sum)
 }
