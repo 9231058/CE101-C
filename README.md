@@ -151,7 +151,7 @@ func main() {
 * [MohamadHasan Taghadosi](https://github.com/taghad) (Lab)
 * [Mahvash Siavashpour](https://github.com/mahvash-siavashpour) (Lab)
 * [Mohsen Mohammadi](https://github.com/MrMiM77)
-* [Seyed Mohamad Fatemi](https://github.com/smf8)
+* [Mohamad Fatemi](https://github.com/smf8)
 * [Saman Hoseini](https://github.com/saman2000hoseini)
 * [Mahin Mirshams](https://github.com/mahinmirshams)
 * [Mohammad Javad Ardestani](https://github.com/mohammadjavadArdestani) (Lab)
@@ -161,7 +161,7 @@ func main() {
 ### Spring-2020 
 
 * [Kian Kashfipour](https://github.com/kian79)
-* [Seyed Mohammad Fatemi](https://github.com/smf8)
+* [Mohammad Fatemi](https://github.com/smf8)
 * [MohamadHasan Taghadosi](https://github.com/taghad) (Lab)
 * [Roya Taheri](https://github.com/RoyaTaheri) (Lab)
 * [Saman Hoseini](https://github.com/saman2000hoseini)
@@ -171,4 +171,28 @@ func main() {
 * [Saeed Maroof](https://gitlab.com/saeed.maroof)
 * [Bahar Kaviani](https://github.com/Baharkaviani)
 * [Parham Alvani](https://github.com/1995parham) (Course instructor)
+
+### Fall-2020
+
+- [Mohammad Fatemi](https://github.com/smf8)
+- [Saman Hoseini](https://github.com/saman2000hoseini)
+- [Parham Alvani](https://github.com/1995parham)
+- [MohamadHasan Taghadosi](https://github.com/taghad)
+- [Amirparsa Salmankhah](http://Github.com/Amirparsa-Sal)
+- [Kasra Zarei](https://github.com/kasrazarei39)
+- [Mina Beiki](https://github.com/mina-beiki)
+- [Ali Ansari](http://Github.com/aliaa80)
+- [Mahla Sharifi](http://github.com/mahlashrifi)
+- [Amirreza Hashemi](https://github.com/AmirSpurs)
+- [Mahdi Rahmani](https://github.com/Mahdi-Rahmani)
+- [Mohammad Salehi](https://github.com/m-salehi-v)
+- [Bardia Ardakanian](https://github.com/bardia-ardakanian)
+- [Amir Naziri](http://github.com/Amir79naziri)
+- [Korosh Roohi](https://github.com/KoroshRH)
+- [Mohammad Javad Rajabi](https://github.com/rajabi2001)
+- [Parham Moonesi](https://github.com/Pmoonesi)
+- [Farshid Nooshi](https://github.com/FarshidNooshi)
+- [Ghazale Noroozi](https://github.com/GhazaleNoroozi)
+- [Faraz Farangizade](https://github.com/farazff)
+- [Amin Habibollah](https://github.com/aminhbl)
 
