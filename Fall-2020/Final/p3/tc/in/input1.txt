@@ -1,0 +1,8 @@
+7 150
+smallest addressable unit of the machine that can contain basic character set it is an integer type actual type can be either signed or unsigned
+of the same size as char but guaranteed to be signed 
+of the same size as char but guaranteed to be unsigned 
+short signed integer type
+basic signed integer type
+long long signed integer type
+real floating point type usually referred to as a singleprecision floatingpoint type
