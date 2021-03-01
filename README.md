@@ -75,12 +75,24 @@ func main() {
 
 ## Assignments
 - HW1: Algorithm Design
+
 - HW2: Caculation (with an introduction to `math.h`) and Interaction (`scanf()` and `printf()`)
+
 - HW3: Decision Making
+
 - HW4: Loops
+
 - HW5: Functions
+
 - HW6: Mid-Term Project
+
 - HW7: Pointer, Structs and Files
+
+  
+
+**Exercises are categorized by topic and semester order in this** [link](https://docs.google.com/spreadsheets/d/1SAPncbl116FTfDpmxd_Duw4hvQ280_bsEuRlWDDcNFU/edit#gid=1228963258)
+
+The difficulty of each question from 10 and terms that contain the question are included in the sheet along with their link.
 
 ## Workshops
 - Introduction-1
